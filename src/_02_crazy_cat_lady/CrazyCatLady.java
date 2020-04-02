@@ -15,12 +15,16 @@ public class CrazyCatLady {
 
 		// 3. If they have 3 or more cats, tell them they are a crazy cat lady
 		if (numbOfCats >= 3) {
-			JOptionPane.showMessage
+			JOptionPane.showMessageDialog(null, "You are a crazy cat lady.");
 		}
 		// 4. If they have less than 3 cats AND more than 0 cats, call the method below to show them a cat video
-
+		else if (0 < numbOfCats) {
+			playVideo("https://www.youtube.com/watch?v=G8KpPw303PY");
+		}
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
-		
+		else if (numbOfCats == 0) {
+			playVideo("https://www.youtube.com/watch?v=oj_yLBltPE8");
+		}
 	}
 
 	static void playVideo(String videoURL) {
