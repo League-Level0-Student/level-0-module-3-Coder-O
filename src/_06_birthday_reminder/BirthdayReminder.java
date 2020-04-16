@@ -32,6 +32,7 @@ public class BirthdayReminder {
 			// print myBirthday
 		
 			System.out.println(are[dessiredBirthday]);
+			JOptionPane.showMessageDialog(null, are[dessiredBirthday]);
 		} else {
 		//7. otherwise print "Sorry, i don't remember that person's birthday!"
 			System.out.println("How did we get here?");
